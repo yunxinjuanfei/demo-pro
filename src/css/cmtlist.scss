@@ -1,0 +1,16 @@
+/* 默认情况下，所有的class类名都被模块化了,即:local */
+.title{
+    color:red;
+    text-align: center;
+    font-weight: 200;
+}
+/* css模块化只针对类选择器和id选择器生效 */
+/* css模块化不会将标签选择器模块化 */
+/* h1{
+    font-style:italic;
+} */
+
+/*:global 包裹起来的类名，不会被模块化，会全局生效*/
+:global(.test){ 
+    font-style: italic;
+}
