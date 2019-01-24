@@ -36,8 +36,8 @@ import ImgFour from '@/assets/images/four.jpg'
 import TxtRight from '@/assets/images/right.png'
 
 export default  class HomeIndex extends React.Component{
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.wode = this.wode.bind(this);
         this.hand = this.hand.bind(this);
         this.tade = this.tade.bind(this);
@@ -55,6 +55,7 @@ export default  class HomeIndex extends React.Component{
             g: ''
         }
     };
+    //select value
     wode(e) {
         let value = e.target.value;
         this.setState({ a: value })

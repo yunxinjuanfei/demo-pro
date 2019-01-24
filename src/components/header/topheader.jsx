@@ -8,7 +8,6 @@ import Logo from '@/assets/images/logo1.png'
 export default class TopHeader extends React.Component {
     constructor() {
         super()
-        //私有数据
         this.state = {
             index:'首页',
             product:'产品中心',
@@ -16,9 +15,20 @@ export default class TopHeader extends React.Component {
             download:'移动端APP',
             about:'关于我们'
         }
+        this.handleScroll = this.handleScroll.bind(this)
     }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+    handleScroll(e) {
+        console.log('浏览器滚动事件');
+    }
+
     render() {
-        return <div className="zsqy_index_header">
+        return <div className="zsqy_index_header"> 
             <div className="header_content1 clearfix">
                 <div className="logo fl">
                     <img src={Logo} alt="" />
