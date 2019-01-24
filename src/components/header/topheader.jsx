@@ -3,7 +3,6 @@ import React from 'react'
 //logo
 import Logo from '@/assets/images/logo1.png'
 
-
 //官网头部导航区
 export default class TopHeader extends React.Component {
     constructor() {
