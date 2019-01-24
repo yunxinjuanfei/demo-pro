@@ -35,13 +35,19 @@ module.exports = {
 				test: /\.scss$/,
 				use: ['style-loader', 'css-loader?modules&localIdentName=[path][name]-[local]-[hash:5]','sass-loader']
 			},//打包处理scss样式的loader
-			// {test:/\.jpg|png|gif|bmp$/,use:'url-loader'}
+			{ 
+				test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
+				loader: 'file-loader',
+				query: {
+					name: '[name].[ext]?[hash]'
+				}
+			}//打包处理图片样式的loader
 		]
 	},
 	resolve:{
 		extensions:['.js','.jsx','.json'],//表示这个几个文件名的后缀名可以省略不写
 		alias:{ //表示别名
-			'@':path.join(__dirname,'./src') //这样。@就表示项目根目录中 src 这一层路径
+			'@':path.join(__dirname,'./src'), //这样。@就表示项目根目录中 src 这一层路径
 		}
 	}
 }
