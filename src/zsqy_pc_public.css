@@ -72,7 +72,7 @@ box-shadow:0px 1px 2px 0px rgba(0,0,0,0.1);}
 .zsqy_index_header .header_content1 .logo img{width:112px;height: 40px;margin: 10px 10px 10px 0;}
 .zsqy_index_header .header_content1 .header_nav{padding:2px 0;}
 .zsqy_index_header .header_content1 .header_nav a{font-size:16px;color: #fff;padding: 0 10px;display: inline-block;height: 52px; }
-.zsqy_index_header .header_content1 .header_nav .item{color:#666;}
+.zsqy_index_header .header_content1 .item a{color:#666;}
 .zsqy_index_header .header_content1 .header_nav .on{border-bottom: 4px solid #C2955D;color:#C2955D;}
 /*index中间*/
 .zsqy_index_middle{padding-bottom: 300px;}
